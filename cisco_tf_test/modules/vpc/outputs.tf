@@ -1,6 +1,7 @@
 output "id" {
   description = "The id of the provisioned VPC"
-}
+  value       = aws_vpc.application_vpc.id #Adding the missing output return value
+ }
 
 output "public_subnets" {
   description = "A list of the public subnets under the provisioned VPC"
